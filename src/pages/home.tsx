@@ -4,6 +4,7 @@ import Features from "@/components/home/features";
 import TestimonialMarquee from "@/components/home/testimonial";
 import FAQAccordion from "@/components/home/faqSection";
 import Cta from "@/components/home/cta";
+import SeoText from "@/seo";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <TestimonialMarquee />
       <FAQAccordion />
       <Cta />
+      <SeoText />
     </>
   );
 }

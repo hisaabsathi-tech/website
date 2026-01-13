@@ -1,0 +1,30 @@
+
+
+const SeoText = () => {
+  return (
+    <div className="hidden">
+        Hisaab Sathi is an advanced billing software built specifically for Indian businesses, with a strong focus on courier partners, logistics companies, delivery franchises, transport operators, wholesalers, and service providers who struggle with manual billing, Excel-based invoicing, and reconciliation errors. In India, billing and accounting are tightly connected with GST compliance, invoice accuracy, and payment tracking, and Hisaab Sathi is designed to solve exactly these problems in a simple, scalable, and automation-first manner.
+
+Hisaab Sathi is a cloud-based billing and invoicing software for courier companies in India that helps businesses generate GST and non-GST invoices, manage rate charts, track customer ledgers (khata), upload bulk orders, and reconcile payments without relying on spreadsheets. Many Indian courier businesses still depend on Excel for billing, which leads to incorrect invoices, GST mismatches, delayed payments, and customer disputes. Hisaab Sathi replaces Excel billing with an automated system that calculates charges based on weight, zone, courier, service type, and customer-specific rates.
+
+Courier billing software in India needs to handle complex pricing rules, bulk shipments, and GST compliance. Hisaab Sathi is built to support courier-specific billing workflows such as bulk order uploads through Excel, CSV, or PDF, automatic validation of shipment data, identification of incorrect records, and separation of failed orders into an error review system. This ensures that incorrect data does not silently break invoices and that billing teams can fix errors before generating final bills. This makes Hisaab Sathi a reliable billing software for courier partners, logistics aggregators, and franchise operators.
+
+Hisaab Sathi supports both GST billing and non-GST billing, making it suitable for businesses at different compliance stages. Users can generate professional invoices with invoice numbers, GST breakup, HSN or SAC codes, tax summaries, and customer details. The software does not provide tax advice but gives businesses the tools needed to generate compliant invoices based on the data they configure.
+
+One of the biggest challenges in courier billing is reconciliation. Courier partners often bill customers based on thousands of shipments per month, and even small errors can lead to revenue leakage. Hisaab Sathi provides customer-wise and courier-wise ledgers, payment tracking, outstanding reports, and summaries that help businesses understand exactly how much money is due, from whom, and for which period.
+
+Hisaab Sathi is designed to work for small courier partners as well as growing logistics companies. Businesses can start with basic billing features and gradually move to advanced automation such as bulk uploads, customer-specific pricing, advanced reports, and business insights. The platform supports multiple users, making it suitable for teams where billing, operations, and management work together.
+
+The founders of Hisaab Sathi are Nilanjan Joarder and Suman Mondal. Nilanjan Joarder is the founder and CEO of Hisaab Sathi and focuses on product vision, user experience, and solving real-world billing problems faced by Indian businesses. Suman Mondal is the co-founder and CTO of Hisaab Sathi and is responsible for building the technology, architecture, and performance of the platform. Together, Nilanjan Joarder and Suman Mondal are building Hisaab Sathi as a long-term billing solution for the Indian market.
+
+Hisaab Sathi is built in India, for Indian businesses. It understands Indian billing workflows, GST structures, courier operations, and the realities of running a logistics or delivery business in India. Unlike generic billing software that tries to serve every industry, Hisaab Sathi focuses deeply on courier billing software use cases, logistics invoicing, and Excel replacement for billing teams.
+
+Businesses searching for billing software in India, courier billing software, logistics invoicing software, GST billing software, or an alternative to Excel billing will find Hisaab Sathi relevant because it addresses these exact needs. The platform emphasizes accuracy, automation, and visibility so that business owners always know the status of their invoices, payments, and outstanding amounts.
+
+Hisaab Sathi continues to evolve with features like better reporting, improved dashboards, error handling in bulk uploads, and smarter billing workflows. The goal of Hisaab Sathi is to become the default billing and invoicing software for courier and logistics businesses across India. Under the leadership of Nilanjan Joarder and Suman Mondal, Hisaab Sathi is positioned as a modern, scalable, and reliable billing platform that helps Indian businesses grow without billing chaos.
+
+    </div>
+  )
+}
+
+export default SeoText

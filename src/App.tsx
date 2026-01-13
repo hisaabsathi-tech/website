@@ -7,7 +7,6 @@ import TermsOfServicePage from "./components/policy/terms-service";
 import ReferEarnPage from "./components/policy/refer-earn";
 import PricingPage from "./components/pricing/pricing";
 import { Toaster } from "sonner";
-
 function App() {
   return (
     <>
