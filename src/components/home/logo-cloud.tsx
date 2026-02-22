@@ -51,7 +51,7 @@ const logos = [
 
 const AnimatedLogoCloud = () => {
   return (
-    <div className="w-full  px-4 bg-background  py-12 ">
+    <div className="w-full  px-4 bg-background  py-12  ">
       <div className="mx-auto max-w-7xl w-full ">
         <p className="text-left text-input text-lg sm:text-xl md:text-2xl mb-4 font-outfit">
           Integrated with Industry Leaders

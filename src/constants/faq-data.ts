@@ -4,10 +4,6 @@
       answer: "Hisaab Sathi replaces manual Excel billing, rate calculations, and customer ledger work with a clean system that automates order entry, invoicing, payments, and reports for courier channel partners."
     },
     {
-      question: "What exactly does Hisaab Sathi do?",
-      answer: "Hisaab Sathi replaces manual Excel billing, rate calculations, and customer ledger work with a clean system that automates order entry, invoicing, payments, and reports for courier channel partners."
-    },
-    {
       question: "Does Hisaab Sathi support GST and non GST invoices?",
       answer: "Yes, Hisaab Sathi supports both GST and non-GST invoices. The system can generate compliant invoices based on your business requirements."
     },

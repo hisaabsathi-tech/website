@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Check } from "lucide-react";
 import FAQAccordion from "../home/faqSection";
 import Cta from "../home/cta";
@@ -11,48 +11,43 @@ interface PricingFeature {
 
 interface PricingPlan {
   name: string;
-  price: String | number;
+  price: number | string;
   period: string;
-  description: string;
   features: PricingFeature[];
   highlighted?: boolean;
 }
 
 const PricingPage: React.FC = () => {
   const navigate = useNavigate();
+  const [isAnnual, setIsAnnual] = useState(false);
+
   const plans: PricingPlan[] = [
     {
       name: "Basic",
       price: 499,
-      period: "/per month",
-      description: "Great for trying out Hisaab Sathi ",
+      period: "/ month billed annually",
       features: [
-        { text: "900 orders creation", included: true },
-        { text: "Single user login", included: true },
+        { text: "2000 orders creation", included: true },
+        { text: "Multi users login", included: true },
         { text: "5GB Database", included: true },
-        { text: "Automated payment due reminders", included: false },
-        { text: "Monthly business summary report", included: false },
       ],
     },
     {
       name: "Standard",
       price: 999,
-      period: "/per month",
-      description: "Best for small business owners",
+      period: "/ month billed annually",
       highlighted: true,
       features: [
-        { text: "2500 orders creation", included: true },
-        { text: "3 users login", included: true },
+        { text: "3000 orders creation", included: true },
+        { text: "Multi users login", included: true },
         { text: "10GB Database", included: true },
-        { text: "Automated payment due reminders", included: true },
-        { text: "Monthly business summary report", included: false },
+        { text: "Automated payment", included: true },
       ],
     },
     {
       name: "Premium",
-      price: 1999,
-      period: "/per month",
-      description: "Best for growing large busineses",
+      price: 2499,
+      period: "/ month billed annually",
       features: [
         { text: "6000+ orders creation", included: true },
         { text: "Unlimited users login", included: true },
@@ -65,24 +60,69 @@ const PricingPage: React.FC = () => {
       name: "Enterprise",
       price: "Custom",
       period: "",
-      description: "Plan based on your business needs",
       features: [
         { text: "All Premium Plan features", included: true },
         { text: "Enterprise level customization", included: true },
-        { text: "Advanced security options", included: true },
         { text: "Dedicated support manager", included: true },
       ],
     },
   ];
 
-  return (
-    <div className="min-h-screen bg-background mt-20  font-outfit py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-full mx-auto">
-        <h1 className="text-4xl md:text-5xl font-instrument text-center  mb-16">
-          Flexible plans for every business.
-        </h1>
+  const getPrice = (plan: PricingPlan) => {
+    if (typeof plan.price !== "number") return plan.price;
+    const discounted = isAnnual ? Math.round(plan.price - 100) : plan.price;
+    return `₹${discounted}`;
+  };
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+  return (
+    <div className=" bg-background mt-20 font-outfit py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className=" flex flex-col justify-center ">
+          <h1 className="text-4xl md:text-5xl font-instrument text-center mb-2">
+            Flexible plans for every business
+          </h1>
+          <p className="text-center text-input font-light text-lg mb-5">
+            Choose the right plan for your business needs
+          </p>
+        </div>
+
+        {/* Switcher — pill/tab style with sliding indicator */}
+        <div className="flex items-center flex-col justify-center gap-4  mb-10">
+          <div className="relative items-center bg-[#FFFFFF] border-2 border-inputBorder rounded-full shadow p-1">
+            {/* Sliding background pill */}
+            <span
+              className="absolute top-1 bottom-1 rounded-full bg-primary shadow transition-all duration-300 ease-in-out"
+              style={{
+                width: "calc(50% - 4px)",
+                left: isAnnual ? "calc(50%)" : "4px",
+              }}
+            />
+            <button
+              onClick={() => setIsAnnual(false)}
+              className={`relative z-10 px-5 py-2 rounded-full text-sm font-medium transition-colors duration-300 ${
+                !isAnnual ? "text-white" : "text-gray-500 hover:text-black"
+              }`}
+            >
+              Monthly
+            </button>
+            <button
+              onClick={() => setIsAnnual(true)}
+              className={`relative z-10 px-5 py-2 rounded-full text-sm font-medium transition-colors duration-300 ${
+                isAnnual ? "text-white" : "text-gray-500 hover:text-black"
+              }`}
+            >
+              Annual
+            </button>
+          </div>
+          <div className="flex items-center gap-1 ml-[190px]">
+            <img src="/Vector.svg" alt="" />
+            <span className="text-xs font-semibold text-primary uppercase tracking-wide">
+              Save up to 17%
+            </span>
+          </div>
+        </div>
+
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 ">
           {plans.map((plan) => (
             <div
               key={plan.name}
@@ -90,36 +130,42 @@ const PricingPage: React.FC = () => {
                 plan.highlighted
                   ? "border-primary shadow bg-gradient-to-b from-white to-[#F0F2FF]"
                   : "border-inputBorder bg-white"
-              } overflow-hidden flex flex-col   min-h-[500px]`}
+              } overflow-hidden flex flex-col min-h-[500px]`}
             >
               <div className="p-6 pb-4">
-                <h2
-                  className={`text-lg font-light mb-4 ${
-                    plan.highlighted ? "text-primary font-medium" : "text-input"
-                  }`}
-                >
-                  {plan.name}
-                </h2>
-                <div className="flex items-baseline mb-2 ">
-                  <span className="text-4xl font-medium">
-                    {typeof plan.price === "number"
-                      ? `₹${plan.price}`
-                      : plan.price}
-                  </span>
-                  <span className="ml-2 text-input font-light text-sm">
-                    {plan.period}
+                {/* Plan name + Free trial badge */}
+                <div className="flex items-center justify-between mb-4">
+                  <h2
+                    className={`text-lg font-light ${
+                      plan.highlighted
+                        ? "text-primary font-medium"
+                        : "text-input"
+                    }`}
+                  >
+                    {plan.name}
+                  </h2>
+                  <span className="text-[14px] font-light text-gray-500 border border-gray-200 rounded-md px-3 py-1 whitespace-nowrap">
+                    30 days free trial !
                   </span>
                 </div>
-                <p className="text-sm text-input font-light mb-6 ">
-                  {plan.description}
-                </p>
-                <hr className="py-2 border-dashed" />
+
+                <div className="flex items-baseline mb-2 flex-col gap-2">
+                  <span className="text-4xl font-medium">{getPrice(plan)}</span>
+                  <span className="ml-2 text-input font-light text-sm">
+                    {typeof plan.price === "number"
+                      ? isAnnual
+                        ? "/ month billed annually"
+                        : "/ month billed monthly"
+                      : ""}
+                  </span>
+                </div>
+                <hr className="py-2 border-dashed mt-4" />
                 <button
                   onClick={() => navigate("/contact")}
-                  className={`w-full py-3 px-4 rounded-[10px] font-light transition-colors  ${
+                  className={`w-full py-3 px-4 rounded-[10px] font-light transition-colors ${
                     plan.highlighted
                       ? "bg-primary text-white"
-                      : "bg-black  text-white"
+                      : "bg-black text-white"
                   }`}
                 >
                   Get Started

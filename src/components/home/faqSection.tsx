@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const FAQAccordion: React.FC = () => {
   return (
-    <div className="min-h-[80vh] flex justify-center items-center py-8 px-4 sm:py-12 sm:px-6 lg:px-8 lg:py-16 bg-background">
+    <div className=" flex justify-center items-center py-8 px-4 sm:py-12 sm:px-6 lg:px-8 lg:py-16 bg-background">
       <div className="w-full  max-w-7xl">
         <div className="flex flex-col lg:flex-row lg:gap-12 xl:gap-16">
           {/* Left Section - Title and CTA */}

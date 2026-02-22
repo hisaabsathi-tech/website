@@ -17,7 +17,7 @@ module.exports = {
         primaryThree:"#FAFBFF",
         secondary:"#161950",
         sidebar:"#5F6368",
-        input:"#71717A",
+        input:"#8C8C8C",
         borderInput:"#E4E4E7",
         background:"#F9FBFF",
         destructive:"#DC2626",

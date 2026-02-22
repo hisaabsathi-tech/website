@@ -37,12 +37,12 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
 
 const TestimonialMarquee: React.FC = () => {
   return (
-    <div className="w-full  py-12 md:py-16 px-4 min-h-[80vh] bg-background ">
+    <div className="w-full  py-12 md:py-16 px-4 bg-background ">
       <div className="max-w-7xl mx-auto mb-10 md:mb-12  ">
         <h2 className="font-instrument  text-3xl sm:text-4xl md:text-5xl lg:text-80  mb-2 sm:mb-3 leading-tight">
           Stories from the businesses we support
         </h2>
-        <p className="text-base md:text-lg lg:text-xl xl:text-2xl font-outfit text-input font-light">
+        <p className="text-base md:text-lg lg:text-2xl xl:text-2xl font-outfit text-input font-light">
           Trusted by businesses that actually move shipments
         </p>
       </div>

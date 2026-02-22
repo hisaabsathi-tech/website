@@ -99,7 +99,7 @@ const NavigationMenuDropDown = () => {
           key={index}
           to={item.path}
           onClick={(e) => handleClick(e, item.path)}
-          className="text-base font-medium text-input transition-colors whitespace-nowrap"
+          className="text-base font-light text-input transition-colors whitespace-nowrap"
         >
           {item.title}
         </NavLink>

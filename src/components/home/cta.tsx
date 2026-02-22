@@ -2,7 +2,7 @@ import eightImage from "/cta-section/cta-section-illustration.png";
 import { Link } from "react-router-dom";
 function Cta() {
   return (
-    <div className="bg-background w-full min-h-[80vh] flex px-4 pt-10 lg:pt-0 justify-center items-center">
+    <div className="bg-background w-full  flex px-4 pt-10 lg:pt-0 justify-center items-center">
       <div className="max-w-7xl bg-white border-2 border-inputBorder rounded-2xl shadow-sm flex flex-col lg:flex-row  mx-auto w-full px-6 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 lg:py-20 gap-8 lg:gap-12 items-center">
         {/* Text Content */}
         <div className="flex flex-col gap-6 flex-1  text-center lg:text-left">
@@ -10,7 +10,7 @@ function Cta() {
             This is what your day should{" "}
             <span className="font-instrument italic">not look like!</span>
           </h2>
-          <p className="font-outfit text-gray-600 font-light text-base sm:text-lg md:text-xl leading-relaxed">
+          <p className="font-outfit text-gray-600 font-light text-2xl sm:text-lg md:text-xl leading-relaxed">
             Jumping between sheets, registers, and calculators only creates
             errors and delays. It slows your business and hides your actual
             numbers.
