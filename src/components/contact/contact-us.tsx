@@ -2,7 +2,6 @@ import React, { useState, type FormEvent } from "react";
 import { Star } from "lucide-react";
 import { personImages } from "@/constants/person";
 import Mail from "/public/contact-icons/mail.png";
-import Whatsapp from "/public/contact-icons/whatsapp.png";
 import { toast } from "sonner";
 interface FormData {
   name: string;
@@ -130,23 +129,13 @@ const ContactForm: React.FC = () => {
 
                 <div className="space-y-3 md:space-y-4">
                   <div className="flex items-center gap-3">
-                    <img src={Whatsapp} alt="" className="h-8 w-8" />
-
-                    <a
-                      href="tel:+919674771591"
-                      className="text-base sm:text-lg font-light font-outfit text-gray-700"
-                    >
-                      +91 96747 71591
-                    </a>
-                  </div>
-                  <div className="flex items-center gap-3">
                     <img src={Mail} alt="" className="h-8 w-8" />
 
                     <a
-                      href="mailto:support@hisaabsathi.com"
+                      href="mailto:hisaabsathi@gmail.com"
                       className="text-base sm:text-lg font-outfit font-light text-gray-700"
                     >
-                      support@hisaabsathi.com
+                      hisaabsathi@gmail.com
                     </a>
                   </div>
                 </div>
