@@ -20,7 +20,9 @@ function FeatureThree() {
             <div className="w-full h-auto max-w-md lg:max-w-full">
               <img
                 src={fifthImage}
-                alt="Fifth Section Illustration"
+                alt="Courier partners like DTDC, Delhivery and Blue Dart managed in one place"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto"
               />
             </div>

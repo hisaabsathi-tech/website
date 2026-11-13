@@ -17,8 +17,9 @@ const Logo = () => {
     >
       <img
         src="/Logo.svg"
-        alt="logo"
-        loading="lazy"
+        alt="Hisaab Sathi logo"
+        width={176}
+        height={40}
         className="w-32  md:w-40 lg:w-44 h-auto"
       />
     </Link>

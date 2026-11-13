@@ -20,7 +20,9 @@ function FeatureOne() {
             <div className="w-full h-auto max-w-md lg:max-w-full">
               <img
                 src={thirdImage}
-                alt="Third Section Illustration"
+                alt="Creating a GST invoice for a courier customer in Hisaab Sathi"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto"
               />
             </div>

@@ -29,7 +29,9 @@ function Cta() {
         <div className="flex-shrink-0 w-full lg:w-auto max-w-md lg:max-w-lg">
           <img
             src={eightImage}
-            alt="Desktop with calculator and papers illustration"
+            alt="Cluttered desk with a calculator and paper bills, the manual billing Hisaab Sathi replaces"
+                loading="lazy"
+                decoding="async"
             className="w-full h-auto object-contain"
           />
         </div>

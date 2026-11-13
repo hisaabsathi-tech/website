@@ -9,7 +9,9 @@ function FeatureTwo() {
             <div className="w-full h-auto max-w-md lg:max-w-full">
               <img
                 src={fourthImage}
-                alt="Fourth Section Illustration"
+                alt="Customer ledger with payments and outstanding balance in Hisaab Sathi"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto object-cover"
               />
             </div>

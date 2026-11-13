@@ -1,3 +1,4 @@
+import PageSeo from "@/components/shared/page-seo";
 import React, { useState } from "react";
 import { Check } from "lucide-react";
 import FAQAccordion from "../home/faqSection";
@@ -76,6 +77,11 @@ const PricingPage: React.FC = () => {
 
   return (
     <div className=" bg-background mt-20 font-outfit py-12 px-4 sm:px-6 lg:px-8">
+      <PageSeo
+        title="Pricing - Hisaab Sathi Courier Billing Software"
+        description="Simple monthly and annual Hisaab Sathi plans for courier and logistics businesses. Compare features for GST invoicing, ledgers and bulk order billing."
+        path="/pricing"
+      />
       <div className="max-w-7xl mx-auto">
         <div className=" flex flex-col justify-center ">
           <h1 className="text-4xl md:text-5xl font-instrument text-center mb-2">

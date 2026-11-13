@@ -7,6 +7,7 @@ import TermsOfServicePage from "./components/policy/terms-service";
 import ReferEarnPage from "./components/policy/refer-earn";
 import PricingPage from "./components/pricing/pricing";
 import { Toaster } from "sonner";
+import NotFound from "./pages/not-found";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
           <Route path="/terms-of-service" element={<TermsOfServicePage />} />
           <Route path="/refer-and-earn" element={<ReferEarnPage />} />
           <Route path="/pricing" element={<PricingPage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </>

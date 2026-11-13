@@ -86,6 +86,7 @@ const HeroSection = () => {
                   <img
                     src="/homeImages/underline.svg"
                     alt=""
+                    aria-hidden="true"
                     className="absolute -bottom-2 left-0 w-full h-auto"
                   />
                 </span>
@@ -182,8 +183,11 @@ const HeroSection = () => {
             <div className="relative w-full  max-w-lg md:max-w-md lg:max-w-xl xl:max-w-2xl">
               <img
                 src="/homeImages/hero-image.png"
-                alt="Billing software illustration"
-                className="w-full h-full"
+                alt="Hisaab Sathi courier billing software dashboard"
+                width={1219}
+                height={877}
+                fetchPriority="high"
+                className="w-full h-auto"
               />
             </div>
           </div>

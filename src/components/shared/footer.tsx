@@ -49,14 +49,15 @@ const Footer: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-6 lg:gap-8 lg:col-span-8">
             {/* Quick Links */}
             <div className="flex flex-col gap-3 md:gap-4">
-              <h4 className="font-medium text-[14px] md:text-[16px]">
+              <h2 className="font-medium text-[14px] md:text-[16px]">
                 Quick Links
-              </h4>
+              </h2>
               <div className="flex flex-col gap-2">
                 <FooterLink href="/">Home</FooterLink>
                 <FooterLink href="/#features">Features</FooterLink>
 
                 <FooterLink href="/pricing">Pricing</FooterLink>
+                <FooterLink href="/contact">Contact</FooterLink>
                 <FooterLink href="https://www.youtube.com/@hisaabsathi">
                   Tutorials
                 </FooterLink>
@@ -65,7 +66,7 @@ const Footer: React.FC = () => {
 
             {/* Legal */}
             <div className="flex flex-col gap-3 md:gap-4">
-              <h4 className="font-medium text-[14px] md:text-[16px]">Legal</h4>
+              <h2 className="font-medium text-[14px] md:text-[16px]">Legal</h2>
               <div className="flex flex-col gap-2">
                 <FooterLink href="/privacy-policy">Privacy Policy</FooterLink>
                 <FooterLink href="/refund-policy">Refund Policy</FooterLink>
@@ -78,9 +79,9 @@ const Footer: React.FC = () => {
 
             {/* Explore */}
             <div className="flex flex-col gap-3 md:gap-4">
-              <h4 className="font-medium text-[14px] md:text-[16px]">
+              <h2 className="font-medium text-[14px] md:text-[16px]">
                 Explore
-              </h4>
+              </h2>
               <div className="flex flex-col gap-2">
                 <FooterLink href="https://www.instagram.com/hisaabsathi">
                   Instagram
@@ -100,9 +101,9 @@ const Footer: React.FC = () => {
 
           {/* Newsletter Section */}
           <div className="lg:col-span-4 flex flex-col gap-3">
-            <h4 className="font-medium text-[16px] md:text-[18px]">
+            <h2 className="font-medium text-[16px] md:text-[18px]">
               Stay in the know &amp; connect with us
-            </h4>
+            </h2>
             <p className="text-lg text-input font-light">
               Subscribe to our newsletter. We promise we don't spam your emails!
             </p>

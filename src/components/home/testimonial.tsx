@@ -11,7 +11,11 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
   <div className="font-outfit w-[280px] xs:w-[300px] md:w-[360px] lg:w-[400px] h-[380px] xs:h-[420px] md:h-[480px] lg:h-[500px] flex-shrink-0 rounded-xl overflow-hidden relative group mx-2 md:mx-3">
     <img
       src={testimonial.image}
-      alt={testimonial.name}
+      alt={`${testimonial.name}, ${testimonial.title}`}
+      width={400}
+      height={500}
+      loading="lazy"
+      decoding="async"
       className="w-full h-full object-cover"
     />
     <div

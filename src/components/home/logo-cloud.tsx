@@ -78,7 +78,8 @@ const AnimatedLogoCloud = () => {
                       key={key}
                       src={logo.url}
                       className="h-8 lg:h-14 "
-                      alt={logo.name}
+                      alt={`${logo.name} logo`}
+                      loading="lazy"
                     />
                   ))}
                 </div>

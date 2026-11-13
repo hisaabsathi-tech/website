@@ -1,8 +1,14 @@
+import PageSeo from "@/components/shared/page-seo";
 import { Separator } from "@/components/ui/separator";
 
  const TermsOfServicePage = () => {
   return (
     <div className="w-full flex justify-center mt-20 font-outfit bg-background ">
+      <PageSeo
+        title="Terms of Service - Hisaab Sathi"
+        description="The terms that govern your use of Hisaab Sathi billing and invoicing software."
+        path="/terms-of-service"
+      />
       <div className="w-full max-w-7xl mx-auto py-3 px-4 flex flex-col gap-8">
         <div>
           <h1 className="text-3xl md:text-[48px] font-bold">Terms of Service</h1>

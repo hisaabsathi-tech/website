@@ -15,11 +15,11 @@ const FAQAccordion: React.FC = () => {
         <div className="flex flex-col lg:flex-row lg:gap-12 xl:gap-16">
           {/* Left Section - Title and CTA */}
           <div className="w-full h-full  lg:w-2/5 xl:w-1/3 mb-8 lg:mb-0 lg:top-8 lg:self-start">
-            <h1 className="font-instrument text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-light text-gray-900 mb-3 lg:mb-4 leading-tight">
+            <h2 className="font-instrument text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-light text-gray-900 mb-3 lg:mb-4 leading-tight">
               Frequently Asked
               <br />
               Questions
-            </h1>
+            </h2>
             <p className="font-outfit text-gray-600 text-base sm:text-lg mb-6 lg:mb-8">
               Everything you need to know about Hisaab Sathi
             </p>

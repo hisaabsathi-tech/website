@@ -1,3 +1,4 @@
+import PageSeo from "@/components/shared/page-seo";
 import React, { useState, type FormEvent } from "react";
 import { Star } from "lucide-react";
 import { personImages } from "@/constants/person";
@@ -104,6 +105,11 @@ const ContactForm: React.FC = () => {
 
   return (
     <div className="bg-background w-full  flex items-center justify-center px-4 p-3 mt-20">
+      <PageSeo
+        title="Contact Hisaab Sathi - Book a Free Demo"
+        description="Talk to the Hisaab Sathi team. Book a free demo of our courier billing software or get help with invoicing, ledgers and bulk order uploads."
+        path="/contact"
+      />
       <div className="w-full max-w-7xl">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16">
           <div className="w-full lg:w-1/2 bg-background">
@@ -153,6 +159,9 @@ const ContactForm: React.FC = () => {
                         <img
                           src={person.url}
                           alt={person.title}
+                          width={48}
+                          height={48}
+                          loading="lazy"
                           className="w-full h-full object-cover"
                         />
                       </div>

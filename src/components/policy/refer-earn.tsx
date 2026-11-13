@@ -1,8 +1,14 @@
+import PageSeo from "@/components/shared/page-seo";
 import { Separator } from "@/components/ui/separator";
 
  const ReferEarnPage = () => {
   return (
     <div className="w-full flex justify-center mt-20 font-outfit bg-background ">
+      <PageSeo
+        title="Refer & Earn - Hisaab Sathi"
+        description="Refer courier and logistics businesses to Hisaab Sathi and earn rewards. Read the referral programme terms."
+        path="/refer-and-earn"
+      />
       <div className="w-full max-w-7xl mx-auto py-3 px-4 flex flex-col gap-8">
         <div>
           <h1 className="text-3xl md:text-[48px] font-bold">Refer & Earn Policy</h1>

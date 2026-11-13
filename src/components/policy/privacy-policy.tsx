@@ -1,8 +1,14 @@
+import PageSeo from "@/components/shared/page-seo";
 import { Separator } from "@/components/ui/separator";
 
 const PrivacyPolicyPage = () => {
   return (
     <div className="w-full flex justify-center mt-20 font-outfit bg-background">
+      <PageSeo
+        title="Privacy Policy - Hisaab Sathi"
+        description="How Hisaab Sathi collects, uses and protects your business and customer data."
+        path="/privacy-policy"
+      />
       <div className="w-full max-w-7xl mx-auto py-3 px-4 flex flex-col gap-8 pb-10">
         <div>
           <h1 className="text-3xl md:text-[48px] font-bold">Privacy Policy</h1>
