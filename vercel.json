@@ -5,17 +5,6 @@
       "has": [
         {
           "type": "host",
-          "value": "(?:www\\.)?hisaabsathi\\.com"
-        }
-      ],
-      "destination": "https://www.hisaabsathi.in/$1",
-      "permanent": true
-    },
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
           "value": "hisaabsathi.in"
         }
       ],
